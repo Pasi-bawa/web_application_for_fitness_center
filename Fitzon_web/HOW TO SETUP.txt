@@ -1,0 +1,5 @@
+1. Create a database and import the database file using phpMyAdmin.
+2. Extract the project and move the project folder to the xampp/htdocs directory.
+3. Open the project using a code editor.
+4. Update the details in the config.php file (username, password, host, database name).
+5. Run the application by navigating to localhost/[project_folder_name]/ in your browser.
