@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #34495e;
+}
+
+/* Main Content Styles */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Progress Container */
+.progress-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Form */
+.progress-form {
+    margin-bottom: 20px;
+}
+
+.progress-form .form-group {
+    margin-bottom: 15px;
+}
+
+.progress-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-form input[type="number"],
+.progress-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.progress-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.progress-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Chart Container */
+.chart-container {
+    margin: 20px 0;
+    height: 300px;
+}
+
+/* Progress History Table */
+.progress-history {
+    margin-top: 20px;
+}
+
+.progress-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.progress-table th, .progress-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.progress-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.progress-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}

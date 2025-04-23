@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Navigation Styles */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #34495e;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background: #34495e;
+    padding-left: 35px;
+}
+
+.sidebar ul li a.active {
+    background: #3498db;
+    border-left: 4px solid #fff;
+}
+
+/* Main Content Area */
+.content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+    background: #f5f6fa;
+}
+
+/* Table Styles */
+.schedule-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.schedule-table th {
+    background: #3498db;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+}
+
+.schedule-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-table tr:hover {
+    background: #f8f9fa;
+}
+
+/* Button Styles */
+.btn-cancel {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-cancel:hover {
+    background: #c0392b;
+}
+
+/* Header Styles */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .content {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+    
+    .schedule-table {
+        font-size: 14px;
+    }
+}
